@@ -1,347 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ameet Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #2C3E50;
-      background-color: #FFFFFF;
-    }
-
-    h1, h2, h3 {
-      color: #3498DB;
-    }
-
-    a {
-      text-decoration: none;
-      color: #3498DB;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #3498DB;
-      color: #FFFFFF;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #2C3E50;
-    }
-
-    /* Navigation Bar */
-    #navbar {
-      position: sticky;
-      top: 0;
-      background-color: #2C3E50;
-      padding: 10px;
-      z-index: 1000;
-    }
-
-    #navbar ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    #navbar ul li {
-      margin: 0 15px;
-    }
-
-    #navbar ul li a {
-      color: #FFFFFF;
-      font-weight: 600;
-    }
-
-    /* Hero Section */
-    #hero {
-      height: 100vh;
-      background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7)), url('hero-bg.jpg');
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #FFFFFF;
-    }
-
-    .hero-content h1 {
-      font-size: 3rem;
-    }
-
-    .hero-content p {
-      font-size: 1.5rem;
-    }
-
-    /* About Me Section */
-    #about {
-      padding: 50px 20px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .about-text {
-      max-width: 600px;
-    }
-
-    .about-image img {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-    }
-
-    /* Skills Section */
-    #skills {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .skills-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .skill {
-      width: 200px;
-      margin: 20px;
-    }
-
-    .progress-bar {
-      background-color: #E0E0E0;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .progress {
-      background-color: #3498DB;
-      height: 10px;
-    }
-
-    /* Projects Section */
-    #projects {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .projects-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .project-card {
-      width: 300px;
-      margin: 20px;
-      border: 1px solid #E0E0E0;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .project-card:hover {
-      transform: scale(1.05);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    /* Achievements Section */
-    #achievements {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .achievements-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .achievement {
-      width: 200px;
-      margin: 20px;
-    }
-
-    /* Contact Section */
-    #contact {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #E0E0E0;
-      border-radius: 5px;
-    }
-
-    .social-links {
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      font-size: 1.5rem;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #2C3E50;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Fade-in Animation */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    section {
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    .back-to-top {
-      color: #3498DB;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .skills-container, .projects-container, .achievements-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Amit Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Amit Niraula</h1>
-      <p>Aspiring Developer | Creative Thinker</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>Hi, I'm Amit, a passionate student with a love for coding and design. I aspire to become a full-stack developer and contribute to innovative projects.</p>
-      </div>
-      <div class="about-image">
-        <div class="about-image">
-            <img src="mainimage.jpg" alt="Your Name" style="width: 100%; max-width: 200px; height: 200px;  object-fit: cover;">
-          </div>      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <i class="fas fa-code"></i>
-        <h3>HTML & CSS</h3>
-        <div class="progress-bar">
-          <div class="progress" style="width: 90%;"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Amit Niraula</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#" onclick="openModal('about')">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#" onclick="openModal('skills')">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#" onclick="openModal('services')">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#" id="openBlogs" onclick="openModal('blogs')">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=official@amitniraula.com.np" target="_blank">
+                    Contact Us
+                </a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-      </div>
-      <!-- Add more skills here -->
-    </div>
-  </section>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="#" onclick="openModal('about')">About</a>
+                <a href="#" onclick="openModal('skills')">Skills</a>
+                <a href="#" onclick="openModal('services')">Services</a>
+                <a href="#" id="openBlogs" onclick="openModal('blogs')">Blogs</a>
+                <a href="official@amitniraula.com.np">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="image.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Amit Niraula</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"> Hi! I'm Amit Niraula, a Computer Science student at Tribhuvan University. Passionate about coding, designing and problem-solving, I'm on a continuous journey of learning and growing in the tech field. </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/TheAmeet17" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/theamitniraula/"><i class="fa-brands fa-linkedin"></i></a>
+                       <!--  <a href="official@amitniraula.com.np"><i class="fa-brands fa-youtube"></i></a>-->
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="cv.pdf" download="My_Resume.pdf">
+                        <button>Download CV</button>
+                        </a>
+                    <div>
+                </div>
+            </div>
+        </section>
+        <div id="about-modal" class="modal">
+            <div class="modal-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm <b>Amit Niraula</b>, a backend developer skilled in Node.js, Express.js, and RESTful APIs, building secure, efficient, and scalable systems. Proficient in JWT authentication, SQL & NoSQL databases, and Docker, I ensure data security and high-performance optimization. Experienced in third-party integrations, I write clean, maintainable code and thrive in collaborative environments, continuously learning to deliver innovative and future-ready solutions. </p>
+                <button class="close-btn" onclick="closeModal('about')">Close</button>
+            </div>
+        </div>
+    
+        <div id="skills-modal" class="modal">
+            <div class="modal-content">
+                <h2>Skills</h2>
+                <p>I specialize in Node.js, Express.js, and RESTful API development, building scalable and high-performance backend systems. Skilled in JWT authentication, SQL & NoSQL database optimization, and Docker containerization, I ensure secure, efficient, and deployable applications. Experienced in third-party integrations and high-traffic system optimization, I write clean, maintainable code and thrive in collaborative environments, continuously learning to deliver future-ready solutions.</p>
+                <button class="close-btn" onclick="closeModal('skills')">Close</button>
+            </div>
+        </div>
+    
+        <div id="services-modal" class="modal">
+            <div class="modal-content">
+                <h2>Services</h2>
+                <p>I offer backend development using Node.js and Express.js, creating secure, scalable, and high-performance applications. I specialize in RESTful API development, JWT authentication, and SQL & NoSQL database optimization to ensure efficient data management and security. With expertise in third-party integrations and Docker containerization, I deliver maintainable, future-ready solutions optimized for performance and scalability.</p>
+                <button class="close-btn" onclick="closeModal('services')">Close</button>
+            </div>
+        </div>
+    
+        
+        <div id="blogs-modal" class="modal">
+            <div class="modal-content">
+                <h2>My Blogs</h2>
+                
+                <div class="blog-container">
+                  <div class="blog-post">
+                      <h3>1: Why I Chose Backend Development as My Career Path</h3>
+                      <p> 
+                          <b>Introduction:</b><br>
+                          My passion for problem-solving and building efficient systems led me to backend development. Understanding how data flows, APIs communicate, and servers process requests fascinated me, shaping my career path.
+                          
+                          <br><br><b>My Journey:</b><br>
+                          My first experience with backend coding started with **Node.js and Express.js**, where I built a **user authentication system** using **JWT**. Over time, I worked on projects like **RESTful API development, database management with SQL & NoSQL, and integrating third-party services**. These experiences strengthened my technical expertise and problem-solving abilities.
+                          
+                          <br><br><b>The Future:</b><br>
+                          I strive to build **secure, scalable, and high-performance backend systems** that solve real-world challenges. Backend development is more than just writing code—it's about **creating impactful solutions that drive innovation and efficiency**.
+                      </p>
+                  </div>
+          
+                  <div class="blog-post">
+                      <h3>2: Essential Skills Every Backend Developer Should Master</h3>
+                      <p>
+                          Backend development requires a combination of technical expertise and problem-solving abilities. Here are **five key skills** that every backend developer should master:
+                          
+                          <br><br><b>1. Problem-Solving:</b><br>
+                          Backend development is all about **breaking down complex challenges** into structured solutions. Debugging errors and optimizing performance have been crucial parts of my journey.
+                          
+                          <br><br><b>2. API Development & Integration:</b><br>
+                          Building **RESTful APIs** and integrating third-party services is fundamental. I have experience in **creating secure API endpoints and optimizing request handling for performance**.
+                          
+                          <br><br><b>3. Database Management:</b><br>
+                          A strong foundation in **SQL & NoSQL databases** is essential for efficient data storage and retrieval. I have optimized database queries to ensure faster and more reliable systems.
+                          
+                          <br><br><b>4. Authentication & Security:</b><br>
+                          Implementing **JWT authentication, OAuth, and secure data practices** is key to protecting user data and preventing vulnerabilities.
+                          
+                          <br><br><b>5. Deployment & Containerization:</b><br>
+                          **Docker and cloud deployment** help in scaling applications efficiently. I have worked on **deploying containerized applications for better performance and reliability**.
+                          
+                          <br><br>Mastering these skills has allowed me to build **robust, scalable, and secure** backend solutions that enhance user experience and system performance.
+                      </p>
+                  </div>                  
+                  
+                    <button class="close-btn" onclick="closeModal('blogs')">Close</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+            
+            function openModal(section) {
+            document.getElementById(`${section}-modal`).style.display = 'flex';
+            }
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Description of the project.</p>
-        <a href="#" class="btn">View Demo</a>
-      </div>
-      <!-- Add more project cards here -->
-    </div>
-  </section>
+            
+            function closeModal(section) {
+            document.getElementById(`${section}-modal`).style.display = 'none';
+            }
+            
+            document.getElementById('openBlogs').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('blogs-modal').style.display = 'flex';
+            });
 
-  <!-- Achievements Section -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <div class="achievements-container">
-      <div class="achievement">
-        <i class="fas fa-trophy"></i>
-        <h3>Award 1</h3>
-        <p>Description of the achievement.</p>
-      </div>
-      <!-- Add more achievements here -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-    <a href="#hero" class="back-to-top">Back to Top</a>
-  </footer>
-
-  <script src="script.js"></script>
+           
+            function closeModal(section) {
+            document.getElementById('blogs-modal').style.display = 'none';
+            }
+            window.onclick = function (event) {
+            const modal = document.getElementById('blogs-modal');
+            if (event.target === modal) {
+            modal.style.display = 'none';
+            }
+            };
+            
+            function closeModal(section) {
+            document.getElementById(`${section}-modal`).style.display = 'none';
+            }
+        </script>
 </body>
 </html>
