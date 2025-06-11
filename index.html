@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>Amit Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -19,161 +19,131 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#" onclick="openModal('about')">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#" onclick="openModal('skills')">Skills</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#" onclick="openModal('services')">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#" id="openBlogs" onclick="openModal('blogs')">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=official@amitniraula.com.np" target="_blank">
-                    Contact Us
-                </a>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#" onclick="openModal('blogs')">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=official@amitniraula.com.np" target="_blank">Contact Us</a>
+                </div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="">Home</a>
+                <a href="#">Home</a>
                 <a href="#" onclick="openModal('about')">About</a>
                 <a href="#" onclick="openModal('skills')">Skills</a>
                 <a href="#" onclick="openModal('services')">Services</a>
-                <a href="#" id="openBlogs" onclick="openModal('blogs')">Blogs</a>
-                <a href="official@amitniraula.com.np">Contact Us</a>
+                <a href="#" onclick="openModal('blogs')">Blogs</a>
+                <a href="mailto:official@amitniraula.com.np">Contact Us</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="image.jpg" alt="">
+
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="image.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Amit Niraula</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Hi! I'm Amit Niraula, a Computer Science student at Tribhuvan University. Passionate about coding, designing and problem-solving, I'm on a continuous journey of learning and growing in the tech field.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/TheAmeet17"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/theamitniraula/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Amit Niraula</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"> Hi! I'm Amit Niraula, a Computer Science student at Tribhuvan University. Passionate about coding, designing and problem-solving, I'm on a continuous journey of learning and growing in the tech field. </p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="https://github.com/TheAmeet17" ><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/theamitniraula/"><i class="fa-brands fa-linkedin"></i></a>
-                       <!--  <a href="official@amitniraula.com.np"><i class="fa-brands fa-youtube"></i></a>-->
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <a href="cv.pdf" download="My_Resume.pdf">
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="ameet Cv.pdf" download="My_Resume.pdf">
                         <button>Download CV</button>
-                        </a>
-                    <div>
-                </div>
-            </div>
-        </section>
-        <div id="about-modal" class="modal">
-            <div class="modal-content">
-                <h2>About Me</h2>
-                <p>Hi, I'm <b>Amit Niraula</b>, a backend developer skilled in Node.js, Express.js, and RESTful APIs, building secure, efficient, and scalable systems. Proficient in JWT authentication, SQL & NoSQL databases, and Docker, I ensure data security and high-performance optimization. Experienced in third-party integrations, I write clean, maintainable code and thrive in collaborative environments, continuously learning to deliver innovative and future-ready solutions. </p>
-                <button class="close-btn" onclick="closeModal('about')">Close</button>
-            </div>
-        </div>
-    
-        <div id="skills-modal" class="modal">
-            <div class="modal-content">
-                <h2>Skills</h2>
-                <p>I specialize in Node.js, Express.js, and RESTful API development, building scalable and high-performance backend systems. Skilled in JWT authentication, SQL & NoSQL database optimization, and Docker containerization, I ensure secure, efficient, and deployable applications. Experienced in third-party integrations and high-traffic system optimization, I write clean, maintainable code and thrive in collaborative environments, continuously learning to deliver future-ready solutions.</p>
-                <button class="close-btn" onclick="closeModal('skills')">Close</button>
-            </div>
-        </div>
-    
-        <div id="services-modal" class="modal">
-            <div class="modal-content">
-                <h2>Services</h2>
-                <p>I offer backend development using Node.js and Express.js, creating secure, scalable, and high-performance applications. I specialize in RESTful API development, JWT authentication, and SQL & NoSQL database optimization to ensure efficient data management and security. With expertise in third-party integrations and Docker containerization, I deliver maintainable, future-ready solutions optimized for performance and scalability.</p>
-                <button class="close-btn" onclick="closeModal('services')">Close</button>
-            </div>
-        </div>
-    
-        
-        <div id="blogs-modal" class="modal">
-            <div class="modal-content">
-                <h2>My Blogs</h2>
-                
-                <div class="blog-container">
-                  <div class="blog-post">
-                      <h3>1: Why I Chose Backend Development as My Career Path</h3>
-                      <p> 
-                          <b>Introduction:</b><br>
-                          My passion for problem-solving and building efficient systems led me to backend development. Understanding how data flows, APIs communicate, and servers process requests fascinated me, shaping my career path.
-                          
-                          <br><br><b>My Journey:</b><br>
-                          My first experience with backend coding started with **Node.js and Express.js**, where I built a **user authentication system** using **JWT**. Over time, I worked on projects like **RESTful API development, database management with SQL & NoSQL, and integrating third-party services**. These experiences strengthened my technical expertise and problem-solving abilities.
-                          
-                          <br><br><b>The Future:</b><br>
-                          I strive to build **secure, scalable, and high-performance backend systems** that solve real-world challenges. Backend development is more than just writing code—it's about **creating impactful solutions that drive innovation and efficiency**.
-                      </p>
-                  </div>
-          
-                  <div class="blog-post">
-                      <h3>2: Essential Skills Every Backend Developer Should Master</h3>
-                      <p>
-                          Backend development requires a combination of technical expertise and problem-solving abilities. Here are **five key skills** that every backend developer should master:
-                          
-                          <br><br><b>1. Problem-Solving:</b><br>
-                          Backend development is all about **breaking down complex challenges** into structured solutions. Debugging errors and optimizing performance have been crucial parts of my journey.
-                          
-                          <br><br><b>2. API Development & Integration:</b><br>
-                          Building **RESTful APIs** and integrating third-party services is fundamental. I have experience in **creating secure API endpoints and optimizing request handling for performance**.
-                          
-                          <br><br><b>3. Database Management:</b><br>
-                          A strong foundation in **SQL & NoSQL databases** is essential for efficient data storage and retrieval. I have optimized database queries to ensure faster and more reliable systems.
-                          
-                          <br><br><b>4. Authentication & Security:</b><br>
-                          Implementing **JWT authentication, OAuth, and secure data practices** is key to protecting user data and preventing vulnerabilities.
-                          
-                          <br><br><b>5. Deployment & Containerization:</b><br>
-                          **Docker and cloud deployment** help in scaling applications efficiently. I have worked on **deploying containerized applications for better performance and reliability**.
-                          
-                          <br><br>Mastering these skills has allowed me to build **robust, scalable, and secure** backend solutions that enhance user experience and system performance.
-                      </p>
-                  </div>                  
-                  
-                    <button class="close-btn" onclick="closeModal('blogs')">Close</button>
+                    </a>
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-            
-            function openModal(section) {
+    </section>
+
+    <!-- Modals -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm <b>Amit Niraula</b>, a backend developer skilled in Node.js, Express.js, and RESTful APIs...</p>
+            <button class="close-btn" onclick="closeModal('about')">Close</button>
+        </div>
+    </div>
+
+    <div id="skills-modal" class="modal">
+        <div class="modal-content">
+            <h2>Skills</h2>
+            <p>I specialize in Node.js, Express.js, and RESTful API development...</p>
+            <button class="close-btn" onclick="closeModal('skills')">Close</button>
+        </div>
+    </div>
+
+    <div id="services-modal" class="modal">
+        <div class="modal-content">
+            <h2>Services</h2>
+            <p>I offer backend development using Node.js and Express.js...</p>
+            <button class="close-btn" onclick="closeModal('services')">Close</button>
+        </div>
+    </div>
+
+    <div id="blogs-modal" class="modal">
+        <div class="modal-content">
+            <h2>My Blogs</h2>
+
+            <div class="blog-post">
+                <h3>1: Why I Chose Backend Development</h3>
+                <p>My passion for problem-solving and building systems led me to backend development...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>2: Essential Skills Every Backend Developer Should Master</h3>
+                <p>Backend development requires a combination of technical expertise and problem-solving abilities...</p>
+            </div>
+
+            <button class="close-btn" onclick="closeModal('blogs')">Close</button>
+        </div>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+
+        function openModal(section) {
             document.getElementById(`${section}-modal`).style.display = 'flex';
-            }
+        }
 
-            
-            function closeModal(section) {
+        function closeModal(section) {
             document.getElementById(`${section}-modal`).style.display = 'none';
-            }
-            
-            document.getElementById('openBlogs').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('blogs-modal').style.display = 'flex';
+        }
+
+        // Close modal on outside click
+        window.onclick = function (event) {
+            const modals = document.querySelectorAll(".modal");
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
             });
+        };
 
-           
-            function closeModal(section) {
-            document.getElementById('blogs-modal').style.display = 'none';
-            }
-            window.onclick = function (event) {
-            const modal = document.getElementById('blogs-modal');
-            if (event.target === modal) {
-            modal.style.display = 'none';
-            }
-            };
-            
-            function closeModal(section) {
-            document.getElementById(`${section}-modal`).style.display = 'none';
-            }
-        </script>
+        // Ad script injection
+        (function () {
+            var adScript = document.createElement("script");
+            adScript.src = "https://www.profitableratecpm.com/da1ddkatz?adbalekey=ceecea02249d697579bc5b893ee35d2e";
+            adScript.async = true;
+            document.body.appendChild(adScript);
+        })();
+    </script>
 </body>
 </html>
